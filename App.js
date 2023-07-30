@@ -90,6 +90,7 @@ class App extends Component {
 
       <FlatList
       showsHorizontalScrollIndicator={false}
+      keyExtractor={(item) => item.id}
       data={this.state.feed}
       renderItem={ ({item}) => <Lista data={item} /> }
       />
@@ -123,4 +124,4 @@ const styles = StyleSheet.create({
 
 });
 
-export default App; 
+export default App;
